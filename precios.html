@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Axioma Tech - Precios</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/jpeg" href="Imagenes/logo de axioma.jpg">
+</head>
+<body>
+  <header class="header-axioma">
+    <div class="nav-container">
+      <a class="nav-brand" href="index.html">
+        <div class="brand-logo-frame"><img src="Imagenes/logo de axioma.jpg" alt="Logo"></div>
+        <span class="brand-title">AXIOMA <span class="brand-highlight">TECH</span></span>
+      </a>
+      <button class="menu-toggle" id="menuToggle"><span></span><span></span><span></span></button>
+      <nav class="nav-menu" id="navMenu">
+        <a href="index.html" class="nav-link">Inicio</a>
+        <a href="servicios.html" class="nav-link">Servicios</a>
+        <a href="precios.html" class="nav-link active">Precios</a>
+        <a href="contacto.html" class="nav-link">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="content-section hero-canvas-container">
+    <canvas id="ondas-fondo"></canvas>
+    
+    <div class="hero-inner-content">
+      <h2 class="section-title">Estructura Presupuestaria</h2>
+      <p class="section-subtitle">Ajuste la cantidad de unidades para calcular la estimación financiera anual en tiempo real.</p>
+      
+      <div class="table-responsive">
+        <table class="axioma-table">
+          <thead>
+            <tr>
+              <th>Descripción</th>
+              <th>Precio Unitario Anual</th>
+              <th>Cantidad</th>
+              <th>Subtotal Estimado</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr data-price-row data-unit-price="260">
+              <td><strong>Cloud-Launch Kit</strong></td>
+              <td>$260.00 USD / unidad</td>
+              <td><input type="number" class="qty-input" value="500" min="0" step="10"></td>
+              <td><span class="price-tag subtotal">$130,000.00 USD</span></td>
+            </tr>
+            <tr data-price-row data-unit-price="260">
+              <td><strong>Cyber-Fortress Pack</strong></td>
+              <td>$260.00 USD / unidad</td>
+              <td><input type="number" class="qty-input" value="550" min="0" step="10"></td>
+              <td><span class="price-tag subtotal">$143,000.00 USD</span></td>
+            </tr>
+            <tr data-price-row data-unit-price="260">
+              <td><strong>Nexus-Dashboard (SaaS)</strong></td>
+              <td>$260.00 USD / unidad</td>
+              <td><input type="number" class="qty-input" value="400" min="0" step="10"></td>
+              <td><span class="price-tag subtotal">$104,000.00 USD</span></td>
+            </tr>
+            <tr data-price-row data-unit-price="260">
+              <td><strong>Scripts & Manuales</strong></td>
+              <td>$260.00 USD / unidad</td>
+              <td><input type="number" class="qty-input" value="450" min="0" step="10"></td>
+              <td><span class="price-tag subtotal">$117,000.00 USD</span></td>
+            </tr>
+            <tr data-price-row data-unit-price="260">
+              <td><strong>Mantenimiento Sentinel</strong></td>
+              <td>$260.00 USD / unidad</td>
+              <td><input type="number" class="qty-input" value="350" min="0" step="10"></td>
+              <td><span class="price-tag subtotal">$91,000.00 USD</span></td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr style="background: rgba(14, 165, 233, 0.05); font-weight: 700;">
+              <td colspan="3" style="text-align: right; padding: 18px;">Presupuesto Total Estimado Anual:</td>
+              <td style="padding: 18px;"><span id="total-presupuesto" class="price-tag" style="font-size: 1.1rem; color: #34D399;">$585,000.00 USD</span></td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </div>
+  </main>
+
+  <footer class="ft-footer"><p>© 2026 Axioma Tech Venezuela</p></footer>
+  <script src="script.js"></script>
+</body>
+</html>

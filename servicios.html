@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Axioma Tech - Servicios</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/jpeg" href="Imagenes/logo de axioma.jpg">
+</head>
+<body>
+  <header class="header-axioma">
+    <div class="nav-container">
+      <a class="nav-brand" href="index.html">
+        <div class="brand-logo-frame"><img src="Imagenes/logo de axioma.jpg" alt="Logo"></div>
+        <span class="brand-title">AXIOMA <span class="brand-highlight">TECH</span></span>
+      </a>
+      <button class="menu-toggle" id="menuToggle"><span></span><span></span><span></span></button>
+      <nav class="nav-menu" id="navMenu">
+        <a href="index.html" class="nav-link">Inicio</a>
+        <a href="servicios.html" class="nav-link active">Servicios</a>
+        <a href="precios.html" class="nav-link">Precios</a>
+        <a href="contacto.html" class="nav-link">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="content-section hero-canvas-container">
+    <canvas id="ondas-fondo"></canvas>
+    
+    <div class="hero-inner-content">
+      <h2 class="section-title">Soluciones Tecnológicas</h2>
+      <p class="section-subtitle">Haga clic en cada módulo para desplegar los detalles profesionales.</p>
+      
+      <div class="services-grid">
+        <div class="servicio-card open" data-service-card>
+          <div class="servicio-head"><span class="servicio-titulo">Cloud-Launch Kit</span><span class="servicio-toggle">+</span></div>
+          <p class="servicio-summary">Infraestructura Cloud automatizada (AWS / Azure) para despliegues rápidos.</p>
+          <div class="servicio-details"><p>Incluye despliegue automatizado, soporte y arquitectura preparada para crecimiento escalable.</p></div>
+          <span class="service-meta">Inversión anual estimada: $130,000.00 USD</span>
+        </div>
+        <div class="servicio-card" data-service-card>
+          <div class="servicio-head"><span class="servicio-titulo">Cyber-Fortress Pack</span><span class="servicio-toggle">+</span></div>
+          <p class="servicio-summary">Blindaje integral de ciberseguridad y respaldos inmutables.</p>
+          <div class="servicio-details"><p>Protección proactiva con políticas de seguridad avanzadas y copias de seguridad contra amenazas.</p></div>
+          <span class="service-meta">Inversión anual estimada: $143,000.00 USD</span>
+        </div>
+        <div class="servicio-card" data-service-card>
+          <div class="servicio-head"><span class="servicio-titulo">Nexus-Dashboard (SaaS)</span><span class="servicio-toggle">+</span></div>
+          <p class="servicio-summary">Plataforma unificada para supervisión analítica de operaciones.</p>
+          <div class="servicio-details"><p>Dashboard centralizado para análisis operativo y toma de decisiones basada en métricas reales.</p></div>
+          <span class="service-meta">Inversión anual estimada: $104,000.00 USD</span>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="ft-footer"><p>© 2026 Axioma Tech Venezuela</p></footer>
+  <script src="script.js"></script>
+</body>
+</html>
